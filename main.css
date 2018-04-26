@@ -1,0 +1,48 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper{
+    width:970px;
+    margin:auto;
+    padding:10px;
+}
+
+.images{
+    display:inline-block;
+    width:700px;
+}
+
+.pokedex{
+    display: inline-block;
+    width: 200px;
+    height:450px;
+    border:25px solid red;
+    vertical-align: top;
+}
+
+.pokedex h1{
+    font-size:20px;
+    text-align: center;
+    margin-top:25px;
+}
+
+.pokedex img{
+    display: block;
+    margin:auto;
+}
+
+.pokedex h3{
+    font-size:16px;
+    margin:10px;
+}
+
+.pokedex ul{
+    margin-left: 50px;
+}
+
+.pokedex p{
+    margin:10px;
+}
