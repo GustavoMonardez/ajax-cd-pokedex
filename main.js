@@ -1,17 +1,9 @@
 $(document).ready(function(){
-    for(var i=1; i <= 5;++i){
+    for(var i=1; i <= 151;++i){
         var src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+ i +".png"
         $(".images").append("<img src='"+ src + "' id='"+i+"'>");
-        //console.log(" start i is:" + i);
-        //var src = "https://pokeapi.co/api/v2/pokemon/"+i+"/";
-       /*  $.get(src,function(res){
-            $(".images").append("<img src='" + res.sprites.front_default + "' id='"+i+"'>");
-            console.log("i is:" + i);
-        });
-        console.log("end i is:" + i); */
     }
     $(".images").on("click","img",function(){
-        //console.log($(this).attr("id"));
         var src = "https://pokeapi.co/api/v2/pokemon/"+ $(this).attr("id") + "/";
         $.get(src,function(res){
             var html_string = "";
@@ -33,23 +25,3 @@ $(document).ready(function(){
         });
     });    
 });
-
-/* console.log("name: "+res.name); 
-console.log("image: "+res.sprites.front_default);
-for(var i = 0; i < res.types.length; i++) {
-    console.log("types: "+res.types[i].type.name);
-}            
-console.log("weight: "+res.weight);
-console.log("height: "+res.height); */
-
-
-/* <h1></h1>
-<img src="" alt="">
-<h3></h3>
-<ul>
-    <li></li>
-</ul>
-<h3></h3>
-<p></p>
-<h3></h3>
-<p></p> */
